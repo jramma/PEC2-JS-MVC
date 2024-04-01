@@ -1,22 +1,25 @@
 function onlyEven(array) {
-  // your code here
+    return array.filter(num => num % 2 === 0);
 }
 
 function onlyOneWord(array) {
-  // your code here
+    return array.filter(str => !str.includes(' '));
 }
 
 function positiveRowsOnly(array) {
-  // your code here
+    return array.filter(row => row.every(num => num > 0));
 }
 
 function allSameVowels(array) {
-  // your code here
+    return array.filter(word => {
+        const vowels = word.match(/[aeiou]/gi);
+        return vowels && vowels.every((v, i, arr) => v === arr[0]);
+    });
 }
 
 module.exports = {
-  onlyEven,
-  onlyOneWord,
-  positiveRowsOnly,
-  allSameVowels
+    onlyEven,
+    onlyOneWord,
+    positiveRowsOnly,
+    allSameVowels
 };
