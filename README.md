@@ -1,8 +1,4 @@
 # PEC2-JS-MVC
-
-- Login UOC: jrammas
-- Nombre y apellidos: Jose Ramos Masip
-
 ## DESCRIPCIÓN
 
 Estructura:
